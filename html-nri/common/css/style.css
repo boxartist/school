@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+#pageHead {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#pageHead .logo {
+    display: inline-block;
+    margin: 15px 0 10px 35px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pageHead .globalNavi {
+    margin: 0 20px 0 auto;
+}
+
+#pageHead .globalNavi ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+#pageHead .globalNavi ul li {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 5px;
+}
+#pageHead .globalNavi ul li a {
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+#pageHead .btn {
+    display: inline-block;
+    padding: 20px 20px;
+}
+.ham {
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    position: relative;
+}
+
+ .ham:before {
+    content: "";
+    width: 20px;
+    height: 16px;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.ham:after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    border-top: 2px solid hsl(0, 0%, 20%);
+    position: absolute;
+    left:20px;
+    margin-top: 28px;
+}
+/* ------パンくずリスト------ */
+.topicpath {
+    margin: 60px auto 25px 90px; 
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#999999;
+    text-decoration: none;
+}
+.topicpath a {
+   text-decoration: none;
+}
+.topicpath a:visited {
+    color: inherit; 
+}
+#pageBody { 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+#pageBody .mainVisualText {
+    position: absolute;
+    width: 1000px;
+    box-sizing: border-box;
+    margin-left: 212.5px;
+    margin-top: 40px;
+}
+#pageBody .mainVisualText p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: #fff;
+    display: block;
+}
+    
+#pageBody .mainVisualText h1 {
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 16 0 10 0;
+    color: #fff;
+}
+/* SNSボタン */
+#pageBody .articleDetailBody .share {
+    float: right;
+    margin: 30px 272.5px 30px 0;
+}
+#pageBody .articleDetailBody .share h2 {
+    display: inline;
+    font-size: 12px; 
+    font-weight: bold;
+    line-height: 30px;
+    color: #666666;  
+}
+
+#pageBody .articleDetailBody .share a  {
+    display: inline-block;
+    height: 34px;
+} 
+#pageBody .articleDetailBody .share h2,
+#pageBody .articleDetailBody .share a {
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#pageBody .articleBodyText {
+    text-align: left;
+}
+#pageBody .articleBodyText h2 {
+    width: 800px;
+    font-size:22px;
+    margin:0 auto;
+    margin-bottom: 30px;
+    margin-top:100px;
+    display:block;
+    list-style-type:none;
+}
+#pageBody .articleBodyText p {
+    font-size: 16px;
+    line-height: 1.9;
+    font-family: 'Noto Sans JP', sans-serif;
+    width:800px;
+    margin: 0 auto;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* #pageBody .articleBodyText { */
+#pageBody .textimage {
+    border: solid 1px #005bac;
+    background-color: #055BAC;
+    width: 295px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+} 
+#pageBody .textimage h2 {
+    font-size:16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    padding: 5px 0px;
+}
+#pageBody .textimage a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#pageBody .textimage a:before {
+    color: inherit;
+    content:"›";
+    padding-right: 10px;
+    position: static;
+    font-weight: 400;
+}
+#pageBody .link {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#pageBody .link .textalignleft a {
+    font-size: 16px;
+    line-height: 1.9;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #0c419a;
+    text-decoration: none;
+    float: left;
+}
+
+#pageBody .link .textalignright a {
+    font-size: 16px;
+    line-height: 1.9;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #0c419a;
+    text-decoration: none;
+    float: right;
+}
+#pageBody .textbox {
+    width: 760px;
+    background-color: #DEECF8;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 120px;
+}
+#pageBody .textbox p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#pageBody .textbox ul {
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+/* ------NRIの強み------ */
+#pageBody .textbox ul li {
+    display: flex;
+}
+#pageBody .textbox ul li a {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    border: solid 1px #CCCCCC;
+    background-color: #FFFFFF;
+    margin: 0 0 20px 0;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0c419a;
+    width: 240px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pageBody .textbox ul li a:before {
+    content:"›";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #231815;
+}
+/* ------企業情報------ */
+#pagebodysub .info {
+    margin: 0 auto 60px auto;
+}
+#pagebodysub .info h1 {
+    width: 1000px ;
+    text-align: left;
+    margin: 120px 204px 0;
+    padding: 18px 0 30px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.9;
+    font-weight: bolder;
+    border-top-style: solid; border-width: 2px;
+    border-bottom: 1px dotted #999;
+}
+#pagebodysub .info .infolist p {
+    width: 1000px ;
+    text-align: left;
+    margin: 30px 204px;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.9;
+    font-weight: bolder;
+}
+/* インフォ */
+#pagebodysub .info .infolist ul {
+    width: 1000px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    border-top-style: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+}
+#pagebodysub .info .infolist ul li {
+    width: 235px;
+    height: 41px;
+    font-size: 14px;
+    color: #0c419a;
+}
+#pagebodysub .info .infolist ul li a {
+    display: block;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #0c419a;
+}
+#pagebodysub .info .infolist ul li a:visited {
+    color: inherit; 
+}
+#pagebodysub .info .infolist ul li a:before {
+    content:"›";
+    margin-right: 10px;
+    color: #231815;
+}
+
+#pagebodysub .info .infolistB p {
+    font-size: 16px;
+    width:1000px;
+    margin: 0 auto;
+    padding: 60px;
+}
+#pagebodysub .info .infolistB p a {
+    text-decoration: none;
+    color: #0c419a;
+}
+#pageBody .info p a:before {
+    content:"‹";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #999999;
+}
+/* ------SNSボタン------ */
+#pagefoot .footlink {
+    border-top: solid 2px #333333;
+    border-bottom: solid 2px #333333;
+    padding: 30px 0;  
+    text-align: center;
+}
+#pageBody .footlink  p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+#pageBody .footlink a  {
+    display: inline-block;
+    padding: 0 20px;
+} 
+/* メニュー */
+#pagefoot {
+    width: 1425px;
+}
+#pagefoot .footmenulist {
+    height: 725px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #CCCCCC;
+    padding-left: 70px;
+}
+   
+#pagefoot .menulist {
+    width: 316.5px;
+    height: 267px;
+    float: left;
+}
+#pagefoot .menulist h2 a {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 15px;
+    color: #333333;
+}
+#pagefoot .menulist ul {
+    list-style: none;
+    font-weight: bold;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-left: 15px;
+    color: #333333;
+}
+#pagefoot .menulist ul li {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 15px;
+}
+#pagefoot .menulist ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+#pagefoot .menulist  a:before {
+    content:"›";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #333333;
+}
+
+#bottominfo {
+    width: 1000px;
+    line-height: 1.5;
+    margin-left: 170px;
+}
+#bottominfo .info ul li  {
+   list-style: none;
+   font-size: 12px;
+   height:18px;
+   float: left;
+   margin: 0 12px 5px 0 ;
+   padding: 0 18px;
+   border-left: solid 1px #CCCCCC;
+   padding: 0 5px;
+   box-sizing: border-box;
+   line-height:1.5;
+}
+#bottominfo .info ul li a {
+    text-decoration: none;
+    color: #999999
+}
+#bottominfo ul li:first-child {
+    border-left: none;
+}
+
+#copyright {
+    width: 1000px;
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 40px;
+}
