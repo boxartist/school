@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
-#pagehead {
+#Pagehead {
     display: flex;
     background-color: #FFFFFF;
     width: 100%;
@@ -9,37 +9,41 @@
     top: 0;
     left: 0;
 }
-#pagehead .logo {
+#Pagehead .logo {
     display: inline-block;
     margin: 15px 0 10px 35px; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#pagehead .globalNavi {
+#Pagehead .globalNavi {
     margin: 0 20px 0 auto;
+    /* padding: 5px; */
 }
 
-#pagehead .globalNavi ul {
+#Pagehead .globalNavi ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: inline-block;
+    height: 60px;
 }
-#pagehead .globalNavi ul li {
+#Pagehead .globalNavi ul li {
     font-size: 14px;
     line-height: 1.5;
     font-weight: bold;
     display: inline-block;
+    margin-top: 20px;
     margin-left: 5px;
+    
 }
-#pagehead .globalNavi ul li a {
+#Pagehead .globalNavi ul li a {
     color: #333333;
     text-decoration: none;
     display: block;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
-#pagehead .btn {
+#Pagehead .btn {
     display: inline-block;
     padding: 20px 20px;
 }
@@ -71,34 +75,48 @@
 }
 /* ------パンくずリスト------ */
 .topicpath {
-    margin: 60px auto 25px 90px; 
+    max-width: 1000px;
+    margin: 60px 200px 25px 77.5px;
+}
+ 
+.topicpath ul {
+    list-style: none;
+    display: table;
+    font-size: 12px;
+    padding-left: 0;
+}
+.topicpath ul li {
+    margin: 0 5px 0 0;
     font-size: 12px;
     line-height: 1.5;
+    float: left;
+    color: #999999;
     font-family: 'Noto Sans JP', sans-serif;
-    color:#999999;
+}
+.topicpath ul li a {
     text-decoration: none;
+    color: inherit;
 }
-.topicpath a {
-   text-decoration: none;
+.topicpath ul li a:first-child::after{
+    margin: 0 2px 0 6px;
+    content: "\003e";
+    font-size: 12px;
 }
-.topicpath a:visited {
-    color: inherit; 
-}
-#pageBody { 
+#PageBody { 
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-#pageBody .mainVisualText {
+#PageBody .mainVisualtext {
     position: absolute;
     width: 1000px;
     box-sizing: border-box;
     margin-left: 212.5px;
     margin-top: 40px;
 }
-#pageBody .mainVisualText p {
+#PageBody .mainVisualtext p {
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
@@ -106,49 +124,55 @@
     display: block;
 }
     
-#pageBody .mainVisualText h1 {
-    font-size: 26px;
-    font-family: sans-serif;
+#PageBody .mainVisualtext h1 {
+    font-size: 28px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     line-height: 1.5;
     margin: 16 0 10 0;
-    color: #fff;
+    color: #FFFFFF;
 }
 /* SNSボタン */
-#pageBody .articleDetailBody .share {
-    float: right;
-    margin: 30px 272.5px 30px 0;
+#PageBody .articleDetailbody .share {
+    width: 1000px;
+    text-align: right;
 }
-#pageBody .articleDetailBody .share h2 {
+#PageBody .articleDetailbody .share {
+    width: 800px;
+    margin: 0 312.5px;
+    border-top: solid #FFFFFF;
+    padding-top: 30px;
+}
+#PageBody .articleDetailbody .share h2 {
     display: inline;
     font-size: 12px; 
     font-weight: bold;
     line-height: 30px;
     color: #666666;  
 }
-
-#pageBody .articleDetailBody .share a  {
+#PageBody .articleDetailbody .share a  {
     display: inline-block;
     height: 34px;
 } 
-#pageBody .articleDetailBody .share h2,
-#pageBody .articleDetailBody .share a {
+#PageBody .articleDetailbody .share h2,
+#PageBody .articleDetailbody .share a {
     margin-right: 20px;
     vertical-align: middle;
 }
-#pageBody .articleBodyText {
-    text-align: left;
+#PageBody .articleBodytext {
+    width: 1000px;
+    margin: 0 220px 60px;
 }
-#pageBody .articleBodyText h2 {
+#PageBody .articleBodytext h2 {
     width: 800px;
     font-size:22px;
     margin:0 auto;
     margin-bottom: 30px;
-    margin-top:100px;
-    display:block;
+    margin-top:40px;
+    display: block;
     list-style-type:none;
 }
-#pageBody .articleBodyText p {
+#PageBody .articleBodytext p {
     font-size: 16px;
     line-height: 1.9;
     font-family: 'Noto Sans JP', sans-serif;
@@ -161,38 +185,39 @@
     margin-right: auto;
   }
 /* #pageBody .articleBodyText { */
-#pageBody .articltextimage {
+    
+#PageBody .articlTextimage {
     border: solid 1px #005bac;
     background-color: #055BAC;
     width: 295px;
     height: 70px;
-    margin: 0 auto;
+    margin: 0 565px;
     margin-top: 20px;
     margin-bottom: 60px;
 } 
-#pageBody .articltextimage h2 {
+#PageBody .articlTextimage h2 {
     font-size:16px;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     padding: 5px 0px;
 }
-#pageBody .articltextimage a {
+#PageBody .articlTextimage a {
     color: #FFFFFF;
     text-decoration: none;
 }
-#pageBody .articltextimage a:before {
+#PageBody .articlTextimage a:before {
     color: inherit;
     content:"›";
     padding-right: 10px;
     position: static;
     font-weight: 400;
 }
-#pageBody .link {
-    margin: 0 auto;
-    width: 800px;
+#PageBody .link {
+    margin-left: 312.5px;
+    width: 760px;
 }
 
-#pageBody .link .textalignleft a {
+#PageBody .link .text-alignleft a {
     font-size: 16px;
     line-height: 1.9;
     font-family: 'Noto Sans JP', sans-serif;
@@ -200,29 +225,42 @@
     text-decoration: none;
     float: left;
 }
-
-#pageBody .link .textalignright a {
+#PageBody .link .text-alignleft a::before {
+    content: "\003c";
+}
+#PageBody .link .text-alignleft a:hover {
+    text-decoration: underline;
+}
+#PageBody .link .text-alignright a {
     font-size: 16px;
     line-height: 1.9;
+    margin-right: -40px;
     font-family: 'Noto Sans JP', sans-serif;
     color: #0c419a;
     text-decoration: none;
     float: right;
 }
-#pageBody .articletextbox {
+#PageBody .link .text-alignright a::after {
+    content: "\003e";
+}
+#PageBody .link .text-alignright a:hover {
+    text-decoration: underline;
+ }
+#PageBody .articleTextbox {
     width: 760px;
     background-color: #DEECF8;
-    margin: 0 auto;
+    margin: 0 312.5px;
     padding: 20px;
     margin-top: 120px;
+    text-align: center;
 }
-#pageBody .articletextbox p {
+#PageBody .articleTextbox p {
     font-size: 16px;
     font-weight: bold;
     font-family: sans-serif;
 }
 
-#pageBody .articletextbox ul {
+#PageBody .articleTextbox ul {
     list-style:none;
     display: flex;
     flex-wrap: wrap;
@@ -231,10 +269,10 @@
     margin: 0;
 }
 /* ------NRIの強み------ */
-#pageBody .articletextbox ul li {
+#PageBody .articleTextbox ul li {
     display: flex;
 }
-#pageBody .articletextbox ul li a {
+#PageBody .articleTextbox ul li a {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -252,20 +290,20 @@
     justify-content: center;
     align-items: center;
 }
-#pageBody .articletextbox ul li a:before {
+#PageBody .articleTextbox ul li a:before {
     content:"›";
     margin-right: 10px;
     font-weight: 400;
     color: #231815;
 }
 /* ------企業情報------ */
-#pagebodysub .articletextinfo {
+#Pagebodysub .articleTextinfo {
     margin: 0 auto 60px auto;
 }
-#pagebodysub .info h1 {
+#Pagebodysub .info h1 {
     width: 1000px ;
     text-align: left;
-    margin: 120px 204px 0;
+    margin: 120px 212.5px 0;
     padding: 18px 0 30px 0;
     font-size: 20px;
     font-family: sans-serif;
@@ -274,85 +312,91 @@
     border-top-style: solid; border-width: 2px;
     border-bottom: 1px dotted #999;
 }
-#pagebodysub .info .articletextinfo p {
+#Pagebodysub .info .articleTextinfo p {
     width: 1000px ;
     text-align: left;
-    margin: 30px 204px;
+    margin: 30px 212.5px;
     font-size: 16px;
     font-family: sans-serif;
     line-height: 1.9;
     font-weight: bolder;
 }
 /* インフォ */
-#pagebodysub .info .articletextinfo ul {
+#Pagebodysub .info .articleTextinfo ul {
     width: 1000px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 212.5px;
     border-top-style: 1px dotted #999;
     border-bottom: 1px dotted #999;
 }
-#pagebodysub .info .articletextinfo ul li {
+#Pagebodysub .info .articleTextinfo ul li {
     width: 235px;
     height: 41px;
     font-size: 14px;
     color: #0c419a;
 }
-#pagebodysub .info .articletextinfo ul li a {
+#Pagebodysub .info .articleTextinfo ul li a {
     display: block;
     padding-left: 15px;
     text-decoration: none;
     color: #0c419a;
 }
-#pagebodysub .info .articletextinfo ul li a:visited {
+#PageBody .info .articleTextinfo a:hover {
+    text-decoration: underline;
+}
+#Pagebodysub .info .articleTextinfo ul li a:visited {
     color: inherit; 
 }
-#pagebodysub .info .articletextinfo ul li a:before {
+#Pagebodysub .info .articleTextinfo ul li a:before {
     content:"›";
     margin-right: 10px;
     color: #231815;
 }
 
-#pagebodysub .info .pageback p {
+#Pagebodysub .info .pageback p {
     font-size: 16px;
     width:1000px;
-    margin: 100px auto;
+    margin: 100px 212.5px;
     /* padding: 60px; */
 }
-#pagebodysub .info .pageback p a {
+#Pagebodysub .info .pageback p a {
     text-decoration: none;
     color: #0c419a;
 }
-#pageBody .info .pageback p a:before {
+#PageBody .info .pageback p a:before {
     content:"‹";
     margin-right: 10px;
     font-weight: 400;
     color: #999999;
 }
+#PageBody .info .pageback p a:hover {
+   text-decoration: underline;
+}
 /* ------SNSボタン------ */
-#pagefoot .footlink {
+#Pagefoot .footlink {
     border-top: solid 2px #333333;
     border-bottom: solid 2px #333333;
     padding: 30px 0;  
     text-align: center;
 }
-#pageBody .footlink  p {
+#PageBody .footlink  p {
     font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
     display: inline-block;
 }
-#pageBody .footlink a  {
+#PageBody .footlink a  {
     display: inline-block;
     padding: 0 20px;
 } 
 /* メニュー */
-#pagefoot {
+#Pagefoot {
     width: 1425px;
 }
-#pagefoot .articledetailfoot {
+#Pagefoot .articleDetailfoot {
     height: 725px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -362,12 +406,12 @@
     padding-left: 70px;
 }
    
-#pagefoot .footmenu {
+#Pagefoot .footmenu {
     width: 316.5px;
     height: 267px;
     float: left;
 }
-#pagefoot .footmenu h2 a {
+#Pagefoot .footmenu h2 a {
     font-size: 16px;
     font-family: sans-serif;
     font-weight: bold;
@@ -375,7 +419,10 @@
     padding-left: 15px;
     color: #333333;
 }
-#pagefoot .footmenu ul {
+#Pagefoot .footmenu h2 a:hover {
+    text-decoration: underline;
+}
+#Pagefoot .footmenu ul {
     list-style: none;
     font-weight: bold;
     align-items:flex-start;
@@ -383,29 +430,32 @@
     padding-left: 15px;
     color: #333333;
 }
-#pagefoot .footmenu ul li {
+#Pagefoot .footmenu ul li {
     font-size: 14px;
     line-height: 1.5;
     font-family: 'Noto Sans JP', sans-serif;
     margin-bottom: 15px;
 }
-#pagefoot .footmenu ul li a {
+#Pagefoot .footmenu ul li a {
     color: inherit;
     text-decoration: none;
 }
-#pagefoot .footmenu a:before {
+#Pagefoot .footmenu ul li a:hover {
+    text-decoration: underline;
+}
+#Pagefoot .footmenu a:before {
     content:"›";
     margin-right: 10px;
     font-weight: 400;
     color: #333333;
 }
-
-#articledetailbottom {
+#articleDetailbottom {
     width: 1000px;
     line-height: 1.5;
+    margin-top: 70px;
     margin-left: 170px;
 }
-#articledetailbottom .bottommenu ul li  {
+#articleDetailbottom .bottommenu ul li  {
    list-style: none;
    font-size: 12px;
    height:18px;
@@ -417,19 +467,21 @@
    box-sizing: border-box;
    line-height:1.5;
 }
-#articledetailbottom .bottommenu ul li a {
+#articleDetailbottom .bottommenu ul li a {
     text-decoration: none;
-    color: #999999
+    color: #999999;
 }
-#articledetailbottom ul li:first-child {
+#articleDetailbottom .bottommenu ul li a:hover {
+    text-decoration: underline;
+}
+#articleDetailbottom ul li:first-child {
     border-left: none;
 }
-
 #copyright {
     width: 1000px;
     font-size: 10px;
     line-height: 1.5;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 0 112px;
     color: #333333;
 }
