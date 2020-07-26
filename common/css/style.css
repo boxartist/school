@@ -100,9 +100,12 @@
     content: "\003e";
     font-size: 12px;
 }
+#PageBody  {
+    width: 1425px;
+    margin: 0 auto;
+}
 #PageBody .mainVisualtext {
     position: absolute;
-    width: auto;
     box-sizing: border-box;
     margin-left: 212.5px;
     margin-top: 40px;
@@ -149,11 +152,6 @@
 #PageBody .articleDetailbody .share a {
     margin-right: 20px;
     vertical-align: middle;
-}
-#PageBody .articleBodytext {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
 }
 #PageBody .articleBodytext h2 {
     width: 800px;
@@ -219,7 +217,6 @@
     margin: 0 auto;
     width: 760px;
 }
-
 #PageBody .link .text-alignleft a {
     font-size: 16px;
     line-height: 1.9;
@@ -250,16 +247,15 @@
     text-decoration: underline;
  }
 #PageBody .articleTextbox {
-    width: 100%;
-    margin: 0 auto;
+   width: 1425px;
+   margin: 0 auto;
 }
 #PageBody .articleTextbox {
     width: 760px;
     background-color: #DEECF8;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 20px;
     margin-top: 120px;
-    text-align: center;
 }
 #PageBody .articleTextbox p {
     font-size: 16px;
@@ -268,7 +264,7 @@
 }
 
 #PageBody .articleTextbox ul {
-    list-style:none;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -311,7 +307,7 @@
 #Pagebodysub .info h1 {
     width: 1000px ;
     text-align: left;
-    margin: 120px auto;
+    margin: 120px auto 0;
     padding: 18px 0 30px 0;
     font-size: 20px;
     font-family: sans-serif;
@@ -391,8 +387,8 @@
 }
 /* ------SNSボタン------ */
 #Pagefoot {
-    width: 1600px;
-    margin: 0 auto;
+    /* width: 1600px;
+    margin: 0 auto; */
 }
 #Pagefoot .footlink {
     border-top: solid 2px #333333;
@@ -419,8 +415,7 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #CCCCCC;
-    padding-left: 70px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 #Pagefoot .footmenu {
     width: 316.5px;
