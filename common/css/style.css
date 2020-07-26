@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 #Pagehead {
-    width:1425px;
-    margin: 0 auto;
-}
-#Pagehead {
     display: flex;
     background-color: #FFFFFF;
     height: 60px;
@@ -53,7 +49,6 @@
     overflow:hidden;
     position: relative;
 }
-
  .ham:before {
     content: "";
     width: 20px;
@@ -75,7 +70,7 @@
 }
 /* ------パンくずリスト------ */
 #Topic {
-    width: 1425px;
+    width: 100%;
     margin: 0 auto;
 }
 #Topic .topicpath {
@@ -105,13 +100,9 @@
     content: "\003e";
     font-size: 12px;
 }
-#PageBody { 
-    width: 1425px;
-    margin: 0 auto;
-}
 #PageBody .mainVisualtext {
     position: absolute;
-    width: 1000px;
+    width: auto;
     box-sizing: border-box;
     margin-left: 212.5px;
     margin-top: 40px;
@@ -125,7 +116,6 @@
     color: #fff;
     display: block;
 }
-    
 #PageBody .mainVisualtext h1 {
     font-size: 28px;
     font-family: 'Noto Sans JP', sans-serif;
@@ -136,12 +126,11 @@
 }
 /* SNSボタン */
 #PageBody .articleDetailbody .share {
-    width: 1000px;
+    width: 800px;
+    margin: 0 auto;
     text-align: right;
 }
 #PageBody .articleDetailbody .share {
-    width: 800px;
-    margin: 0 312.5px;
     border-top: solid #FFFFFF;
     padding-top: 30px;
 }
@@ -162,13 +151,14 @@
     vertical-align: middle;
 }
 #PageBody .articleBodytext {
-    width: 1000px;
-    margin: 0 220px 60px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 #PageBody .articleBodytext h2 {
     width: 800px;
-    font-size:22px;
-    margin:0 auto;
+    font-size: 22px;
+    margin: 0 auto;
     margin-bottom: 30px;
     margin-top:40px;
     display: block;
@@ -187,16 +177,20 @@
     margin-right: auto;
 }    
 #PageBody .articlTextimage {
+    width: 100%;
+    margin: 0 auto;
+}
+#PageBody .articlTextimage {
     border: solid 1px #005bac;
     background-color: #055BAC;
     width: 295px;
     height: 70px;
-    margin: 0 565px;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 60px;
 } 
 #PageBody .articlTextimage h2 {
-    font-size:16px;
+    font-size: 16px;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     padding: 5px 0px;
@@ -222,7 +216,7 @@
     font-weight: 400;
 }
 #PageBody .link {
-    margin-left: 312.5px;
+    margin: 0 auto;
     width: 760px;
 }
 
@@ -256,9 +250,13 @@
     text-decoration: underline;
  }
 #PageBody .articleTextbox {
+    width: 100%;
+    margin: 0 auto;
+}
+#PageBody .articleTextbox {
     width: 760px;
     background-color: #DEECF8;
-    margin: 0 312.5px;
+    margin: 0 auto;
     padding: 20px;
     margin-top: 120px;
     text-align: center;
@@ -306,9 +304,6 @@
     color: #231815;
 }
 /* ------企業情報------ */
-#Pagebodysub .articleTextinfo {
-    margin: 0 auto 60px auto;
-}
 #Pagebodysub {
     width: 1425px;
     margin: 0 auto;
@@ -316,7 +311,7 @@
 #Pagebodysub .info h1 {
     width: 1000px ;
     text-align: left;
-    margin: 120px 212.5px 0;
+    margin: 120px auto;
     padding: 18px 0 30px 0;
     font-size: 20px;
     font-family: sans-serif;
@@ -328,7 +323,7 @@
 #Pagebodysub .info .articleTextinfo p {
     width: 1000px ;
     text-align: left;
-    margin: 30px 212.5px;
+    margin: 30px auto;
     font-size: 16px;
     font-family: sans-serif;
     line-height: 1.9;
@@ -341,7 +336,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 212.5px;
+    margin: 0 auto;
     border-bottom: 1px dotted #999999;
 }
 #Pagebodysub .info .articleTextinfo ul li {
@@ -369,10 +364,14 @@
     background-size: contain;
     color: inherit;
 }
+#Pagebodysub .info .pageback {
+    width:1425px;
+    margin: 100px auto;
+}
 #Pagebodysub .info .pageback p {
     font-size: 16px;
     width:1000px;
-    margin: 100px 212.5px;
+    margin: 100px auto;
 }
 #Pagebodysub .info .pageback p a {
     text-decoration: none;
@@ -392,7 +391,7 @@
 }
 /* ------SNSボタン------ */
 #Pagefoot {
-    width:1425px;
+    width: 1600px;
     margin: 0 auto;
 }
 #Pagefoot .footlink {
@@ -412,11 +411,8 @@
     padding: 0 20px;
 } 
 /* メニュー */
-#Pagefoot {
-    width: 1425px;
-    margin: 0 auto;
-}
 #Pagefoot .articleDetailfoot {
+    width: 1425px;
     height: 725px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -424,12 +420,13 @@
     flex-wrap: wrap;
     border-bottom: 1px solid #CCCCCC;
     padding-left: 70px;
+    margin: 0 auto;
 }
-   
 #Pagefoot .footmenu {
     width: 316.5px;
     height: 267px;
     float: left;
+    margin: 0 auto;
 }
 #Pagefoot .footmenu h2 a {
     font-size: 16px;
@@ -438,6 +435,7 @@
     text-decoration: none;
     padding-left: 15px;
     color: #333333;
+    margin: 0 auto;
 }
 #Pagefoot .footmenu h2 a:hover {
     text-decoration: underline;
@@ -449,6 +447,7 @@
     flex-direction: column;
     padding-left: 15px;
     color: #333333;
+    margin: 0 auto;
 }
 #Pagefoot .footmenu ul li {
     font-size: 14px;
@@ -475,8 +474,9 @@
 #articleDetailbottom {
     width: 1000px;
     line-height: 1.5;
-    margin-top: 70px;
-    margin-left: 170px;
+    padding-top: 70px;
+    margin: 0 auto;
+    padding-right: 90px;
 }
 #articleDetailbottom .bottommenu ul li  {
     list-style: none;
@@ -501,14 +501,13 @@
     border-left: none;
 }
 #copyright {
-    width: 1425px;
+    width: 100%;
     margin: 0 auto;
 }
 #copyright {
     width: 1000px;
     font-size: 10px;
     line-height: 1.5;
-    margin: 0 auto;
     padding: 40px 0 112px;
     color: #333333;
 }
