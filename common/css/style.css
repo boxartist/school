@@ -531,14 +531,14 @@ img.btn {
   text-align: center;
 }
 
-#PageBody .footlink p {
+#Pagefoot .footlink p {
   font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
   display: inline-block;
 }
 
-#PageBody .footlink a {
+#Pagefoot .footlink a {
   display: inline-block;
   padding: 0 20px;
 }
