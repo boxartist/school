@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
 #Pagehead {
   display: flex;
   background-color: #FFFFFF;
@@ -11,6 +10,11 @@
 #Pagehead .logo {
   display: inline-block;
   margin: 15px 0 10px 35px;
+}
+
+#Pagehead .logo img {
+  width: 56px;
+  height: 28px;
 }
 
 #Pagehead .globalNavi {
@@ -46,59 +50,35 @@
   transition: 0.3s;
 }
 
-#Pagehead .btn {
-  display: inline-block;
-  padding: 20px 20px;
+#Pagehead .search {
+  display: inline-flex;
+  justify-content: center;
+  padding: 20px;
 }
+
+
+/* ------ボタン------ */
+
+img.btn {
+  width: 20px;
+  height: 20px;
+  padding-right: 28px;
+}
+
 #Pagehead .btn:hover {
   opacity: 0.7;
-}
-
-#Pagehead .ham:hover {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  opacity: 0.7;
-}
-.ham {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-}
-
-.ham:before {
-  content: "";
-  width: 20px;
-  height: 16px;
-  border-top: 2px solid #333333;
-  border-bottom: 2px solid #333333;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.ham:after {
-  content: "";
-  width: 20px;
-  height: 10px;
-  border-top: 2px solid hsl(0, 0%, 20%);
-  position: absolute;
-  left: 20px;
-  margin-top: 28px;
 }
 
 
 /* ------パンくずリスト------ */
 
-#Topic {
-  width: 100%;
+.topicpath {
+  top: 60px;
+  left: 50px;
+  max-width: 1000px;
+  position: absolute;
   margin: 0 auto;
-}
-
-#Topic .topicpath {
-  margin: 0 77.5px 25px;
+  z-index: 1;
 }
 
 .topicpath ul {
@@ -129,60 +109,86 @@
 }
 
 #PageBody .mainVisualtext {
-  position: absolute;
-  box-sizing: border-box;
-  margin-left: 212.5px;
-  margin-top: 40px;
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
 }
 
-#PageBody .mainVisualtext p {
+#PageBody .mainVisualtext img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+#PageBody .mainVisual {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  width: 1000px;
+  left: 212.5px;
+  top: 10px;
+}
+
+#PageBody .mainVisual p {
   font-size: 20px;
   font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 0;
   font-weight: 400;
   line-height: 1.5;
-  margin: 0;
-  color: #fff;
+  color: #FFFFFF;
   display: block;
 }
 
-#PageBody .mainVisualtext h1 {
+#PageBody .mainVisual h1 {
   font-size: 28px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   line-height: 1.5;
-  margin: 16px 0 10px 0;
+  margin-top: 16px;
   color: #FFFFFF;
 }
 
+
 /* ------SNSボタン------ */
 
-#PageBody .articleDetailbody .share {
-  width: 800px;
-  margin: 0 auto;
-  text-align: right;
+#PageBody .articleDetailbody {
+  max-width: 800px;
+  margin: 0 auto 40px;
 }
 
-#PageBody .articleDetailbody .share {
-  border-top: solid #FFFFFF;
-  padding-top: 30px;
+.share img {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  width: 24px;
+  height: 24px;
 }
 
-#PageBody .articleDetailbody .share h2 {
-  display: inline;
+.share {
+  width: 172px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.share:before {
+  content: "Share";
   font-size: 12px;
-  font-weight: bold;
-  line-height: 30px;
+  font-family: Arial;
   color: #666666;
+  padding: 12px 5px 12px 0;
 }
 
-#PageBody .articleDetailbody .share a {
+.share img {
+  border-top: solid #FFFFFF;
+}
+
+.share a {
   display: inline-block;
   height: 34px;
-}
-
-#PageBody .articleDetailbody .share h2, #PageBody .articleDetailbody .share a {
-  margin-right: 20px;
-  vertical-align: middle;
 }
 
 #PageBody .articleBodytext h2 {
@@ -195,6 +201,28 @@
   list-style-type: none;
 }
 
+#PageBody .articleBodytext h2 {
+  width: 800px;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  display: block;
+  list-style-type: none;
+}
+
+#PageBody .articleBodytext h2:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  background-image: url("../images/bg_blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
 #PageBody .articleBodytext p {
   font-size: 16px;
   line-height: 1.9;
@@ -203,10 +231,12 @@
   margin: 0 auto;
 }
 
-.aligncenter {
+#PageBody .articleBodytext img {
+  max-width: 100%;
+  width: 900px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  margin: 0 auto;
 }
 
 #PageBody .articlTextimage {
@@ -220,7 +250,7 @@
   width: 295px;
   height: 70px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 
@@ -237,8 +267,8 @@
 }
 
 #PageBody .articlTextimage:hover {
-    opacity: 0.8;
-    transition: 0.5s;
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 #PageBody .articlTextimage a:before {
@@ -253,7 +283,7 @@
 /* pdfのアイコン画像 */
 
 #PageBody .articlTextimage a::after {
-  content:"";
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -300,7 +330,7 @@
   color: #0c419a;
   text-decoration: none;
   float: right;
-  padding-right:20px;
+  padding-right: 20px;
 }
 
 #PageBody .link .text-alignright a::after {
@@ -327,6 +357,7 @@
   background-color: #DEECF8;
   padding: 20px;
   margin-top: 120px;
+  margin-bottom: 60px;
 }
 
 #PageBody .articleTextbox p {
@@ -369,9 +400,10 @@
   justify-content: center;
   align-items: center;
 }
+
 #PageBody .articleTextbox ul li a:hover {
-    background: #f4f4f4;
-    transition: 0.3s;
+  background: #f4f4f4;
+  transition: 0.3s;
 }
 
 #PageBody .articleTextbox ul li a:before {
@@ -380,6 +412,7 @@
   font-weight: 400;
   color: #231815;
 }
+
 
 /* ------企業情報------ */
 
@@ -411,6 +444,7 @@
   line-height: 1.9;
   font-weight: bolder;
 }
+
 
 /* ------インフォ------ */
 
@@ -444,7 +478,7 @@
 }
 
 #Pagebodysub .info .articleTextinfo ul li a:before {
-  content:"";
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -472,7 +506,7 @@
 }
 
 #PageBody .info .pageback p a::before {
-  content:"";
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -486,7 +520,10 @@
 #PageBody .info .pageback p a:hover {
   text-decoration: underline;
 }
+
+
 /* ------SNSボタン------ */
+
 #Pagefoot .footlink {
   border-top: solid 2px #333333;
   border-bottom: solid 2px #333333;
@@ -509,8 +546,13 @@
 
 /* メニュー */
 
+#Pagefoot .footlink img {
+  width: 28px;
+  height: 28px;
+}
+
 #Pagefoot .articleDetailfoot {
-  width: 1425px;
+  width: 100%;
   height: 725px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -561,8 +603,9 @@
   color: inherit;
   text-decoration: none;
 }
+
 #Pagefoot .footmenu ul li a:before {
-  content:"";
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -573,13 +616,12 @@
   padding-right: 10px;
 }
 
-
 #Pagefoot .footmenu ul li a:hover {
   text-decoration: underline;
 }
 
 #Pagefoot .footmenu h2 a:before {
-  content:"";
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -636,5 +678,5 @@
   font-size: 10px;
   line-height: 1.5;
   padding: 40px 0 112px;
-  color: #333333;
+  color: #030202;
 }
